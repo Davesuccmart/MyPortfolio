@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    background: white;
+    height: 90vh;
+    font-family: Helvetica, sans-serif;
+}
+
+#wrapper{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+}
+
+#nav > h1{
+    margin-left: 2rem;
+}
+
+#nav > #links{
+    margin-left: auto;
+    margin-right: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#links a{
+    color: #3871a7;
+    text-decoration: none;
+}
+
+#content{
+    height: 100%;
+    display: flex;
+}
+
+.box{
+    flex: 1;
+    height: 100%;
+    width: 50%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: left;
+}
+
+@import url('https://googleapis.com');
+.left > h1{
+    font-family: 'Poppins', sans-serif;
+    color: #3871a7;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-left: 2rem;
+}
+.left p{
+    width: 80%;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    line-height: 1.5rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+.buttons > a > button{
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #3871a7;
+   box-shadow: 2px 2px 2px #3871a7;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+}
+
+.image-container{
+    margin-right: 5rem;
+    background-color: lightgray; /* Center color */
+    box-shadow: inset 0 0 30px 20px white; /* Edge color (20px thick) */
+    border: 2px solid #3871a7;
+    width: 14rem;
+    height: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#image-holder{
+    position: relative;
+    width: fit-content;
+    height: 90%;
+    outline: 1px solid #3871a7;
+    right: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.image-container img{
+    max-width: 14rem;
+    height: auto;
+}
