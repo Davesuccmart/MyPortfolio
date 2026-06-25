@@ -82,6 +82,7 @@ body{
     border-radius: 8px;
     border: 2px solid #3871a7;
     box-shadow: 2px 2px 2px #3871a7;
+    cursor: pointer
 }
 
 .right{
