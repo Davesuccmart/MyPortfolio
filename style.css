@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background: white;
-    height: 90vh;
+    height: 100vh;
     font-family: Helvetica, sans-serif;
 }
 
@@ -31,6 +31,10 @@ body{
 #links a{
     color: #3871a7;
     text-decoration: none;
+}
+
+#drop-down{
+    display: none;
 }
 
 #content{
@@ -73,11 +77,11 @@ body{
     gap: 1rem;
     margin-left: 2rem;
 }
-.buttons > a > button{
+.left > .buttons > a > button{
     padding: 10px;
     border-radius: 8px;
     border: 2px solid #3871a7;
-   box-shadow: 2px 2px 2px #3871a7;
+    box-shadow: 2px 2px 2px #3871a7;
 }
 
 .right{
@@ -112,4 +116,57 @@ body{
 .image-container img{
     max-width: 14rem;
     height: auto;
+}
+
+footer{
+    display: none;
+}
+
+@media (max-width: 720px) {
+
+    #links, #links > a{
+        display: none;
+    }
+
+    #drop-down{
+        display: block;
+        background: transparent;
+        border: 1ps solid transparent;
+    }
+
+    #content{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background: black;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    footer > a{
+        color: white;
+        text-decoration: none;
+    }
 }
