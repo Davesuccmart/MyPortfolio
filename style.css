@@ -1,50 +1,56 @@
-body{
+@import url('https://googleapis.com');
+
+body {
     margin: 0;
     background: white;
-    min-height: 100vh;
+    min-height: 50vh;
     font-family: Helvetica, sans-serif;
 }
 
-#wrapper{
+#wrapper {
     margin: 3rem;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-#nav{
+header {
+    margin-bottom: 2rem;
+}
+
+#nav {
     display: flex;
     align-items: center;
 }
 
-#nav > h1{
+#nav>h1 {
     margin-left: 2rem;
 }
 
-#nav > #links{
+#nav>#links {
     margin-left: auto;
     margin-right: 2rem;
     display: flex;
     gap: 2rem;
 }
 
-#links a{
+#links a {
     color: #3871a7;
     text-decoration: none;
 }
 
-#content{
+#content {
     height: 100%;
     display: flex;
 }
 
-.box{
+.box {
     flex: 1;
     height: 100%;
     width: 50%;
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,8 +58,7 @@ body{
     align-items: left;
 }
 
-@import url('https://googleapis.com');
-.left > h1{
+.left>h1 {
     font-family: 'Poppins', sans-serif;
     color: #3871a7;
     font-weight: 700;
@@ -61,19 +66,21 @@ body{
     margin: 0;
     margin-left: 2rem;
 }
-.left p{
+
+.left p {
     width: 90%;
     flex-wrap: wrap;
     margin-left: 2rem;
     line-height: 1.5rem;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 1rem;
     margin-left: 2rem;
 }
-.left > .buttons > a > button{
+
+.left>.buttons>a>button {
     padding: 10px;
     border-radius: 8px;
     border: 2px solid #3871a7;
@@ -81,17 +88,15 @@ body{
     cursor: pointer;
 }
 
-.right{
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: end;
 }
 
-.image-container{
-    margin-right: 5rem;
-    background-color: lightgray; /* Center color */
-    box-shadow: inset 0 0 30px 20px white; /* Edge color (20px thick) */
+.image-container {
+    background-color: lightgray;
+    box-shadow: inset 0 0 30px 20px white;
     border: 2px solid #3871a7;
     width: 14rem;
     height: 20rem;
@@ -100,7 +105,7 @@ body{
     align-items: center;
 }
 
-#image-holder{
+#image-holder {
     position: relative;
     width: fit-content;
     height: 90%;
@@ -110,38 +115,39 @@ body{
     overflow: hidden;
 }
 
-.image-container img{
+.image-container img {
     max-width: 14rem;
     height: auto;
 }
 
-footer{
+footer {
     display: none;
 }
 
 @media (max-width: 720px) {
 
-    #links, #links > a{
+    #links,
+    #links>a {
         display: none;
     }
 
-    #drop-down{
+    #drop-down {
         display: block;
         background: transparent;
         border: 1ps solid transparent;
     }
 
-    #content{
+    #content {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
 
-    .box{
+    .box {
         width: 100%;
     }
 
-    .left{
+    .left {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -149,7 +155,11 @@ footer{
         align-items: center;
     }
 
-    footer{
+    .image-container {
+        margin-right: -3rem;
+    }
+
+    footer {
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
@@ -164,7 +174,7 @@ footer{
         padding: 1rem;
     }
 
-    footer > a{
+    footer>a {
         color: white;
         text-decoration: none;
     }
