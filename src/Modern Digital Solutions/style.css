@@ -1,0 +1,76 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(to right, whitesmoke 5%, rgb(100, 100, 100));
+    width: 100%;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#wrapper{
+    margin: 0 2rem;
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+#nav > .nav-child{
+    flex: 1;
+}
+
+#nav > #links{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+#nav > a{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.orange-btn{
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    background: orange;
+    padding: 10px;
+}
+
+#hero{
+    background: whitesmoke;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#button-wrap > .second{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.card{
+    background: rgb(179, 179, 179);
+    border-radius: 10px;
+    padding-left: 1rem;
+}
